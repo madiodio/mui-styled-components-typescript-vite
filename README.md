@@ -1,37 +1,48 @@
-# Create React App example with styled-components & TypeScript
+# The Hot Stack 🔥
 
-The main difference between this and the non-typescript example is that you need to add the following path config to your tsconfig:
-
-```json
-"paths": {
-  "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
-}
-```
-
-and install @types/styled-components:
-
-```
-npm install --save-dev @types/styled-components
-```
-
-Alternatively, to skip this configuration, you can set `skipLibCheck: true` in your tsconfig.
+- `Vite`
+- `styled-components`
+- `typescript`
+- `Eslint` with [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app)
+- [`Material UI`](https://mui.com)
+- [`Material UI System`](https://mui.com/system/basics/#main-content)
+- `svgr`
+- Absolute imports with `vite-tsconfig-paths`
+- Compatible with `process.env` references
+- `Jest`
 
 ## How to use
 
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
+### Dev
 
-<!-- #default-branch-switch -->
+1. Clone
 
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/create-react-app-with-styled-components-typescript
-cd create-react-app-with-styled-components-typescript
+```
+git clone https://github.com/madiodio/mui-styled-components-typescript-vite.git
 ```
 
-Install it and run:
+2. Install dependencies
 
-```sh
-npm install
-npm start
+```
+yarn install
+```
+
+3. Start
+
+```
+yarn start
+```
+
+### Build
+
+```
+yarn build
+```
+
+### Serve the app
+
+```
+yarn serve
 ```
 
 ## CodeSandbox
@@ -44,13 +55,11 @@ The following link leverages this demo: https://mui.com/guides/interoperability/
 
 [![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/styled-components-interoperability-w9z9d)
 
-## The idea behind the example
+## Why
 
-This example demonstrates how you can setup [Create React App](https://github.com/facebookincubator/create-react-app) with [styled-components](https://styled-components.com/) as a style engine for your application using TypeScript.
+TODO
 
 ## What's next?
 
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation, continuing browsing it from the [templates](https://mui.com/getting-started/templates/) section.
+- Cypress ?
+- TODO

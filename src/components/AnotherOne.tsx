@@ -5,8 +5,6 @@ import Typography from "@mui/material/Typography";
 
 import styled from "styled-components";
 
-import { AnotherOne } from "components/AnotherOne";
-
 const StyledLink = styled(Link)`
   text-decoration: underline;
 `;
@@ -19,7 +17,7 @@ function LightBulbIcon(props: SvgIconProps) {
   );
 }
 
-export default function ProTip() {
+export function AnotherOne() {
   return (
     <>
       <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
@@ -28,13 +26,12 @@ export default function ProTip() {
         <StyledLink
           href="https://mui.com/getting-started/templates/"
           css={{ cursor: "grab" }}
-          sx={{ color: "black" }}
+          sx={{ color: "blue" }}
         >
           templates
         </StyledLink>{" "}
         on the MUI documentation.
       </Typography>
-      <AnotherOne />
     </>
   );
 }
